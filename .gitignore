@@ -1,0 +1,55 @@
+## --- Visual Studio 核心忽略项 ---
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## --- .NET / C# 构建产物 (必须忽略) ---
+[Bb]in/
+[Oo]bj/
+*.lock.json
+# NuGet 包 (通常不提交包本身，只提交配置文件)
+packages/
+!packages/build/
+
+## --- C++ 特有忽略项 ---
+# C++ 的中间编译文件和输出目录
+ipch/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+*.obj
+*.tlog
+*.log
+*.idb
+*.pdb
+*.ilk
+*.pch
+*.sdf
+*.opensdf
+
+## --- Android (MAUI) 特有忽略项 ---
+# Gradle 缓存和构建文件
+.gradle/
+local.properties
+# Android 签名密钥 (绝对不能提交！！！)
+*.keystore
+*.jks
+*.p12
+*.key
+
+## --- Windows 临时文件 ---
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+## --- Mac (如果你的队友用 Mac) ---
+.DS_Store
+
+## --- 其他 ---
+# 如果你有包含敏感信息的配置文件
+appsettings.Development.json
+secrets.json
